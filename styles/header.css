@@ -1,0 +1,41 @@
+header {
+  max-width: 80rem;
+  width: 100%;
+  padding: 1.25rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
+
+  & img[src*="Logo"]:hover {
+    transform: rotate(90deg);
+  }
+
+  & img[src*="shopping"]:hover {
+    transform: rotate(-30deg);
+  }
+
+  & a {
+    position: relative;
+    & span {
+      position: absolute;
+      left: 18px;
+      bottom: 28px;
+      font-family: "Inter", serif;
+      font-size: .75rem;
+      padding-inline: 7px;
+      padding-block: 1px;
+      border-radius: 80%;
+      background-color: var(--snitap-sun);
+    }
+  }
+
+}
